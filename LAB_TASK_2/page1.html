@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Example</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+
+    #box {
+      position: absolute; /* Position Property */
+      top: 50px;
+      left: 50px;
+      width: 200px; /* Max Width */
+      max-width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      border: 2px solid blue; /* Borders */
+      z-index: 2; /* Z-index */
+      overflow: hidden; /* Overflow */
+    }
+
+   
+    .inline-block {
+      display: inline-block; /* Inline Block */
+      width: 100px;
+      height: 100px;
+      margin: 10px; /* Margins */
+      padding: 5px; /* Padding */
+      border: 2px dashed green;
+      background-color: lightgreen;
+    }
+
+
+    #box p {
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      background-color: darkblue;
+      margin: 10px;
+    }
+
+
+    [data-type="example"] {
+      font-style: italic;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <p>This is a positioned box!</p>
+  </div>
+  
+  <div class="inline-block">Block 1</div>
+  <div class="inline-block">Block 2</div>
+  <div class="inline-block">Block 3</div>
+  
+  <p data-type="example">This is an example of an attribute selector.</p>
+</body>
+</html>
